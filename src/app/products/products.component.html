@@ -1,0 +1,13 @@
+
+<div class="container bg-dark text-white" >
+hola
+</div>
+<div class="container">
+  <div class="alert alert-primary" role="alert" *ngFor="let product of products" style="width: 200px; height: auto; margin-top: 20px; padding-bottom: -20px">
+    <img src= {{product.image}} class="img-thumbnail" style="width: 150px; height: auto; display: block; margin-left: auto; margin-right: auto" >
+    <a [title]="product.brand + ' ' + product.model + ' details'" style="display: block; text-align: center">{{product.brand}} {{product.model}}<br>
+        {{product.price}} €
+    </a>
+
+  </div>
+</div>
